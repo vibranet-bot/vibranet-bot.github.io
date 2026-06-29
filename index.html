@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO optimisation -->
+  <meta name="description" content="VibraNet™ - VibraNet™ official Discord bot panel.">
+  <meta name="image" content="https://vibranet.github.io/res/img/banner.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vibranet-bot.github.io/">
+  <meta property="og:title" content="VibraNet™ - Discord Bot">
+  <meta property="og:description" content="VibraNet™ - VibraNet™ official Discord bot panel.">
+  <meta property="og:image" content="https://vibranet.github.io/res/img/banner.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://vibranet-bot.github.io/">
+  <meta name="twitter:title" content="VibraNet™ - Discord Bot">
+  <meta name="twitter:description" content="VibraNet™ - VibraNet™ official Discord bot panel.">
+  <meta name="twitter:image" content="https://vibranet.github.io/res/img/banner.png">
+  <!-- start process -->
+  <title>VibraNet™ Bot - lang selection</title>
+  
+  <link rel="canonical" href="https://vibranet-bot.github.io/en/">
+  
+  <script>
+    (function() {
+      const userLang = (navigator.language || navigator.userLanguage).toLowerCase().slice(0, 2);
+      const supportedLanguages = ['fr'];
+
+      if (supportedLanguages.includes(userLang)) {
+        window.location.replace('/' + userLang + '/');
+      } else {
+
+        window.location.replace('/en/');
+      }
+    })();
+  </script>
+</head>
+<body>
+  <noscript>
+    <p>Please select your language / Veuillez choisir votre langue :</p>
+    <ul>
+      <li><a href="en/">English</a></li>
+      <li><a href="fr/">Français</a></li>
+    </ul>
+  </noscript>
+</body>
+</html>
